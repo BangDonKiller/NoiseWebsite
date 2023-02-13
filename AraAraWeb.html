@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+
+    <meta charset="utf-8">
+    <title>AraAraWebsite</title>
+</head>
+
+<link rel="stylesheet" href="decoration.css">
+
+<body>
+    <text style="color:blue;font-size: 4vw;">IRyS' Noise</text>
+    <br>
+
+    <h1>click count</h1>
+    <p id="demo"> 0 </p>
+    <!-- <p> -->
+    <!-- <script>
+            c = 1
+
+            function count() {
+                x = document.getElementById("demo");
+                x.innerHTML = c++;
+            }
+
+            function changeImage() {
+                count()
+                element = document.getElementById('myimage')
+                if (element.src.match("https://i.imgur.com/vDdYvZ6.png")) {
+                    element.src = "https://i.imgur.com/7p1hqW6.png";
+                } else {
+                    element.src = "https://i.imgur.com/vDdYvZ6.png";
+                }
+            }
+        </script> -->
+    <!-- </p> -->
+    <p>
+        <script>
+
+            c = 1
+
+            function count() {
+                x = document.getElementById("demo");
+                x.innerHTML = c++;
+            }
+
+            function play() {
+                count()
+                var a1 = document.getElementById("audio1");
+                var a2 = document.getElementById("audio2");
+                var a3 = document.getElementById("audio3");
+                var a4 = document.getElementById("audio4");
+                var x;
+                var num = Math.floor(Math.random() * 4) + 1;
+                if (num == 1) {
+                    x = a1;
+                    x.play();
+                } else if (num == 2) {
+                    x = a2;
+                    x.play();
+                } else if (num == 3) {
+                    x = a3;
+                    x.play();
+                } else if (num == 4) {
+                    x = a4;
+                    x.play();
+                }
+
+
+                // function changeImage() {
+                //     count()
+                //     element = document.getElementById('myimage')
+                //     if (element.src.match("https://i.imgur.com/vDdYvZ6.png")) {
+                //         element.src = "https://i.imgur.com/7p1hqW6.png";
+                //     } else {
+                //         element.src = "https://i.imgur.com/vDdYvZ6.png";
+                //     }
+                // }
+            }
+        </script>
+        <img class="photo" src="irys-irys-hololive.gif"
+            style="width:135px;height:135px;vertical-align:bottom;border-radius: 50%;" value="PLAY" onclick="play()">
+
+        <audio id="audio1" src="audio1.mp3"></audio>
+        <audio id="audio2" src="audio2.mp3"></audio>
+        <audio id="audio3" src="audio3.mp3"></audio>
+        <audio id="audio4" src="audio4.mp3"></audio>
+
+    </p>
+    <p>
+        <a href="https://www.youtube.com/channel/UC8rcEBzJSleTkf_-agPM20g"><text
+                style="color:black;font-size: 1vw;">Subscribe to IRyS Ch. hololive-EN!</text></a>
+        <br>
+        <text style="color:black;font-size: 1vw;">Create by Paris Shieh</text>
+    </p>
+</body>
+
+
+</html>

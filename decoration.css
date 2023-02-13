@@ -1,0 +1,43 @@
+body {
+    background-image: linear-gradient(to right, rgb(120, 15, 118), rgb(225, 136, 248));
+
+
+    letter-spacing: 3px;
+
+    line-height: 1.8;
+
+    text-shadow: 2px 2px 5px black;
+
+    font-family: "Lucida Handwriting", "Lucida Console", "Courier New", monospace;
+    /* font-family: "Audiowide", sans-serif; */
+
+    margin-top: 50px;
+
+    
+
+    text-align: center;
+}
+
+.photo{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    filter:gray;
+}
+.photo:hover{
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    filter: none;
+}
+
+
+
+
+
+
+
